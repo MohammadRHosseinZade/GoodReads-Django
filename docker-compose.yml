@@ -1,0 +1,50 @@
+version: '3.9'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    volumes:
+      - .:/master
+    environment:
+      DB_DBNAME: NetbanPROJECT
+      DB_USER: NetbanPROJECT_user
+      DB_PASSWORD: NetbanPROJECT_password
+      DB_PORT: 5432
+      DB_HOST: db
+      DEFUALT_ADMIN_USER: NetBanSharif
+      DEFUALT_ADMIN_PASSWORD: NetBan123
+    ports:
+      - "8010:8010"
+    depends_on:
+      - db
+    networks:
+      - NETBAN_network   
+    command: >
+      sh -c "
+             while ! nc -z db 5432 ; do echo 'waiting for main db...' & sleep 3 ; done &&
+             python setup.py &&
+             python manage.py runserver 0.0.0.0:8010"
+
+
+  db:
+    image: postgres:13
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      POSTGRES_DB: NetbanPROJECT
+      POSTGRES_USER: NetbanPROJECT_user
+      POSTGRES_PASSWORD: NetbanPROJECT_password
+    ports:
+      - "5432:5432"
+    networks:
+      - NETBAN_network 
+
+volumes:
+  postgres_data:
+
+networks:
+  NETBAN_network:
+    driver: bridge

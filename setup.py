@@ -102,8 +102,8 @@ class SetUp:
         try:
             if not User.objects.filter(username='NetBanSharif').exists():
                 User.objects.create_superuser(
-                    username='NetBanSharif',
-                    password='NetBan123',
+                    username=environ['NetBanSharif'],
+                    password=environ['NetBan123'],
                     is_active=True,
                 )
                 print("Superuser created successfully.")
