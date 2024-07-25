@@ -41,8 +41,8 @@ class RecommendedBooksView(APIView):
    permission_classes = [IsAuthenticated]
 
    def get(self, request):
-     reviews = Review.objects.filter(user=user, rating__gte=4, rating__lte=5)
      user = request.user
+     reviews = Review.objects.filter(user=user, rating__gte=4, rating__lte=5)
      if reviews.count() == 0:
          return Response({"error": "Not enough info"}, status=400)
      reviewed_books = [review.book for review in reviews]
