@@ -100,10 +100,10 @@ class SetUp:
     
         from Account.models import User
         try:
-            if not User.objects.filter(username='NetBanSharif').exists():
+            if not User.objects.filter(username=environ['DEFUALT_ADMIN_USER']).exists():
                 User.objects.create_superuser(
-                    username=environ['NetBanSharif'],
-                    password=environ['NetBan123'],
+                    username=environ['DEFUALT_ADMIN_USER'],
+                    password=environ['DEFUALT_ADMIN_PASSWORD'],
                     is_active=True,
                 )
                 print("Superuser created successfully.")
