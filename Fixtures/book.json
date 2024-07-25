@@ -1,0 +1,82 @@
+[
+    {
+        "model": "Book.book",
+        "pk": 1,
+        "fields": {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee"
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 2,
+        "fields": {
+            "title": "1984",
+            "author": "George Orwell"
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 3,
+        "fields": {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald"
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 4,
+        "fields": {
+            "title": "The Catcher in the Rye",
+            "author": "J.D. Salinger"
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 5,
+        "fields": {
+            "title": "The Hobbit",
+            "author": "J.R.R. Tolkien"
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 6,
+        "fields": {
+            "title": "Brave New World",
+            "author": "Aldous Huxley"
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 7,
+        "fields": {
+            "title": "The Lord of the Rings",
+            "author": "J.R.R. Tolkien"
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 8,
+        "fields": {
+            "title": "Fahrenheit 451",
+            "author": "Ray Bradbury"
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 9,
+        "fields": {
+            "title": "Animal Farm",
+            "author": "George Orwell"
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 10,
+        "fields": {
+            "title": "The Chronicles of Narnia",
+            "author": "C.S. Lewis"
+        }
+    }
+]

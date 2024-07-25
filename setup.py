@@ -91,7 +91,11 @@ class SetUp:
         self._run_command(['python',
                            f'{settings.BASE_DIR_STR}/manage.py',
                            'loaddata',
-                           'initial_data.json'],
+                           './Fixtures/user.json',
+                           './Fixtures/book.json',
+                           './Fixtures/genre.json',
+                           './Fixtures/genrebook.json',
+                           './Fixtures/review.json',],
                           raise_error=False)
 
     @staticmethod
@@ -100,10 +104,10 @@ class SetUp:
     
         from Account.models import User
         try:
-            if not User.objects.filter(username=environ['DEFUALT_ADMIN_USER']).exists():
+            if not User.objects.filter(username=environ['DEFAULT_ADMIN_USER']).exists():
                 User.objects.create_superuser(
-                    username=environ['DEFUALT_ADMIN_USER'],
-                    password=environ['DEFUALT_ADMIN_PASSWORD'],
+                    username=environ['DEFAULT_ADMIN_USER'],
+                    password=environ['DEFAULT_ADMIN_PASSWORD'],
                     is_active=True,
                 )
                 print("Superuser created successfully.")

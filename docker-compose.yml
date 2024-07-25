@@ -13,8 +13,8 @@ services:
       DB_PASSWORD: NetbanPROJECT_password
       DB_PORT: 5432
       DB_HOST: db
-      DEFUALT_ADMIN_USER: NetBanSharif
-      DEFUALT_ADMIN_PASSWORD: NetBan123
+      DEFAULT_ADMIN_USER: NetBanSharif
+      DEFAULT_ADMIN_PASSWORD: NetBan123
     ports:
       - "8010:8010"
     depends_on:

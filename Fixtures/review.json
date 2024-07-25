@@ -1,0 +1,92 @@
+[
+    {
+        "model": "Review.review",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "book": 1,
+            "rating": 5
+        }
+    },
+    {
+        "model": "Review.review",
+        "pk": 2,
+        "fields": {
+            "user": 2,
+            "book": 2,
+            "rating": 4
+        }
+    },
+    {
+        "model": "Review.review",
+        "pk": 3,
+        "fields": {
+            "user": 1,
+            "book": 3,
+            "rating": 5
+        }
+    },
+    {
+        "model": "Review.review",
+        "pk": 4,
+        "fields": {
+            "user": 2,
+            "book": 4,
+            "rating": 3
+        }
+    },
+    {
+        "model": "Review.review",
+        "pk": 5,
+        "fields": {
+            "user": 1,
+            "book": 5,
+            "rating": 4
+        }
+    },
+    {
+        "model": "Review.review",
+        "pk": 6,
+        "fields": {
+            "user": 2,
+            "book": 6,
+            "rating": 5
+        }
+    },
+    {
+        "model": "Review.review",
+        "pk": 7,
+        "fields": {
+            "user": 1,
+            "book": 7,
+            "rating": 4
+        }
+    },
+    {
+        "model": "Review.review",
+        "pk": 8,
+        "fields": {
+            "user": 2,
+            "book": 8,
+            "rating": 5
+        }
+    },
+    {
+        "model": "Review.review",
+        "pk": 9,
+        "fields": {
+            "user": 1,
+            "book": 9,
+            "rating": 3
+        }
+    },
+    {
+        "model": "Review.review",
+        "pk": 10,
+        "fields": {
+            "user": 2,
+            "book": 10,
+            "rating": 4
+        }
+    }
+]

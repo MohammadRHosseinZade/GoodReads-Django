@@ -1,0 +1,22 @@
+[
+    {
+        "model": "Account.user",
+        "pk": 1,
+        "fields": {
+            "username": "johndoe",
+            "is_active": true,
+            "is_admin": false,
+            "password": "strongpassword1"
+        }
+    },
+    {
+        "model": "Account.user",
+        "pk": 2,
+        "fields": {
+            "username": "admin",
+            "is_active": true,
+            "is_admin": true,
+            "password": "strongpassword12"
+        }
+    }
+]
